@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POZİTİF OR NEGATİF</title>
+</head>
+<body>
+
+    <input id="deger1" placeholder="DEĞERİ GİRİN" ></input>
+    <button id="buton">HESAPLA</button>
+    <div id="sonuc"></div>
+
+
+    <script>
+
+               let buton=document.getElementById("buton");
+               buton.onclick=sorgu;
+                     let sonuc=document.getElementById("sonuc");
+
+               function sorgu() {
+
+
+                let deger1=Number(document.getElementById("deger1").value);
+                
+
+                  if(deger1==0){
+
+
+                     sonuc.innerHTML="SAYI 0 A EŞİTTİR";
+
+
+
+                  }
+
+                else if(deger1>0){
+
+                       
+                          sonuc.innerHTML="sayı pozitiftir";
+
+
+
+                  }
+
+                 else{
+
+                              sonuc.innerHTML="sayi negatiftir";
+
+
+
+
+                 }
+
+
+
+
+
+
+
+
+
+
+
+               }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

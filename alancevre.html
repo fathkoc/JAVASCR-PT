@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DİKDÖRTGEN ALAN VE ÇEVRE</title>
+</head>
+<body>
+
+
+  <input id="kenar" placeholder="KENAR UZUNLUGU" ></input>
+  <input  id="kenar2"  placeholder="KENAR UZUNLUGU" ></input>
+  <button  id="alanbuton">ALAN HESAPLA</button>
+  <button  id="cevrebuton">CEVRE HESAPLA</button>
+ 
+  <div id="alan"></div>
+  <div id="cevre"></div>
+  
+
+
+
+  <script>
+
+           function alan(){
+
+           let k1=Number(document.getElementById("kenar").value);
+           let k2=Number(document.getElementById("kenar2").value);
+
+           let alanhesap=k1*k2;
+           
+           document.getElementById("alan").innerHTML="ALAN:"+alanhesap;
+
+
+           }
+
+           function cevre(){
+
+                 let k1=Number(document.getElementById("kenar").value);
+                  let k2=Number(document.getElementById("kenar2").value);
+
+                  let cevrehesap=(k1+k2)*2;
+
+            document.getElementById("cevre").innerHTML="CEVRE:"+cevrehesap;
+
+
+
+           }
+
+
+
+
+
+             let butonalan=document.getElementById("alanbuton");
+             butonalan.onclick=alan;
+
+            let cevrebuton=document.getElementById("cevrebuton");
+            cevrebuton.onclick=cevre;
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

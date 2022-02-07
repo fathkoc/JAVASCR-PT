@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HİPOTENUS HESAP</title>
+</head>
+<body>
+     <h1>HİPOTENUS HESAPLAMA</h1>
+<input type="text" id="kenar1" placeholder="BİRİNCİ KENARI YAZINIZ" ></input>
+<input  type="text" id="kenar2" placeholder="İKİNCİ KENARI YAZINIZ" ></input>
+<button  id="btn" >HESAPLA</button>
+<div id="sonuc"></div>
+
+
+
+
+<script>
+function hipotenusal(){
+ 
+      let k1=Number(document.getElementById("kenar1").value);
+      let k2=Number(document.getElementById("kenar2").value);
+
+      let hipo=Math.sqrt((k1*k1)+(k2*k2));
+
+      document.getElementById("sonuc").innerHTML="HİPOTENÜS:"+hipo;
+
+      
+}
+
+ let buton =document.getElementById("btn");
+ 
+ buton.onclick=hipotenusal;
+
+
+
+</script>
+
+    
+</body>
+</html>
